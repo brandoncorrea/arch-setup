@@ -39,6 +39,7 @@ sudo pacman -S --noconfirm \
   xorg
 
 sudo systemctl enable sddm
+sudo systemctl enable NetworkManager
 sudo systemctl set-default graphical.target
 
 # Xorg and Wayland need a driver (e.g., xf86-video-intel, nvidia). Add based on GPU:

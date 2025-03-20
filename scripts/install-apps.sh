@@ -10,13 +10,19 @@ yay -S --noconfirm \
   nordvpn-bin \
   obsidian \
   intellij-idea-ultimate-edition \
-  slack-desktop
+  slack-desktop \
+  sozi
 
 # intellij-idea-community-edition if can't log in to ultimate 
 
 # Pacman Apps
 pacman -S --noconfirm \
   obsidian \
-  firefox
+  firefox \
+  inkscape # Recommended for Sozi
 
+# Configure NordVPN
 sudo systemctl enable --now nordvpnd
+nordvpn set killswitch on
+nordvpn set autoconnect on
+nordvpn set dns 9.9.9.9

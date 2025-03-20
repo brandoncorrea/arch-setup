@@ -1,6 +1,20 @@
 #!/bin/sh
 
-sudo pacman -S iwd dhcpcd bash curl unzip rlwrap which git base-devel jdk21-openjdk dotnet-sdk-8.0 --noconfirm
+sudo pacman -S --noconfirm \
+  iwd \
+  dhcpcd \
+  bash \
+  curl \
+  unzip \
+  rlwrap \
+  which \
+  dnsutils \
+  git \
+  base-devel \
+  nodejs \
+  openssh \
+  jdk21-openjdk \
+  dotnet-sdk-8.0
 
 # Enable Services on boot
 sudo systemctl enable iwd
